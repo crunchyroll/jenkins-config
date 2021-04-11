@@ -1,0 +1,5 @@
+torageClass: openebs-hostpath
+serviceAccount:
+  create: false
+  name: jenkins
+  annotations: {}
