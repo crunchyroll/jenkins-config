@@ -7,6 +7,7 @@ serviceAccount:
 
 controller:
   servicePort: 8080
+  serviceType: nodePort
   ingress:
     enabled: false
     paths: []
