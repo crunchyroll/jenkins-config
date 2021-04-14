@@ -1,4 +1,5 @@
 storageClass: gp2
+jenkinsUrl: https://spin-jenkins.cx-alpha0.com
 serviceAccount:
   create: false
   name: jenkins
