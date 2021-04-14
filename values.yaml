@@ -12,5 +12,9 @@ controller:
     paths: []
     apiVersion: "networking.k8s.io/v1"
     labels: {}
-    annotations: {}
+    annotations: 
+          kubernetes.io/ingress.class: alb
+          alb.ingress.kubernetes.io/scheme: internet-facing
+          alb.ingress.kubernetes.io/target-type: instance
+          alb.ingress.kubernetes.io/healthcheck-path: /
     hostName: spin-jenkins.cx-alpha0.com
