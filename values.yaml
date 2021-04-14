@@ -4,7 +4,7 @@ serviceAccount:
   name: jenkins
   annotations: {}
   ingress:
-    enabled: true
+    enabled: false
     paths: 
      - backend:
          serviceName: jenkins
