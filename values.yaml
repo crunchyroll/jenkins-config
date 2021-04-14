@@ -1,4 +1,4 @@
-torageClass: openebs-hostpath
+storageClass: gp2
 serviceAccount:
   create: false
   name: jenkins
@@ -12,4 +12,4 @@ serviceAccount:
     apiVersion: "networking.k8s.io/v1"
     labels: {}
     annotations: {}
-    hostName: spin-jenkins.mirv.ninja
+    hostName: spin-jenkins.cx-alpha0.com
