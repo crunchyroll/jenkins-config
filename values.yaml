@@ -8,7 +8,7 @@ serviceAccount:
 controller:
   servicePort: 8080
   ingress:
-    enabled: true
+    enabled: false
     paths: []
     apiVersion: "networking.k8s.io/v1"
     labels: {}
