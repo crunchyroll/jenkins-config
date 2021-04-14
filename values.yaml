@@ -9,7 +9,7 @@ controller:
   servicePort: 8080
   ingress:
     enabled: true
-    paths:[]
+    paths: []
     apiVersion: "networking.k8s.io/v1"
     labels: {}
     annotations: {}
