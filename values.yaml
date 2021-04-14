@@ -6,16 +6,10 @@ serviceAccount:
   annotations: {}
 
 controller:
+  servicePort: 8080
   ingress:
     enabled: true
-    paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: jenkins
-            port:
-              number: 8080
+    paths:[]
     apiVersion: "networking.k8s.io/v1"
     labels: {}
     annotations: {}
