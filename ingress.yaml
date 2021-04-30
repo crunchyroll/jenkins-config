@@ -1,0 +1,23 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    alb.ingress.kubernetes.io/healthcheck-path: /_health
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/target-type: instance
+    artifact.spinnaker.io/location: jenkins
+    artifact.spinnaker.io/name: jenkins
+    artifact.spinnaker.io/type: kubernetes/ingress
+    artifact.spinnaker.io/version: ""
+  generation: 1
+  name: jenkins
+  namespace: jenkins
+spec:
+  rules:
+    - http:
+        paths:
+          - backend:
+              serviceName: jenkins
+              servicePort: 8080
+            path: /*
+            pathType: ImplementationSpecific
