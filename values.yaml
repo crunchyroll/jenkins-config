@@ -1,5 +1,5 @@
 storageClass: gp2
-jenkinsUrl: https://spin-jenkins.cx-alpha0.com
+jenkinsUrl: https://spin-jenkins.el-mgmt-global.com
 serviceAccount:
   create: true
   name: jenkins
@@ -18,4 +18,4 @@ controller:
           alb.ingress.kubernetes.io/scheme: internet-facing
           alb.ingress.kubernetes.io/target-type: instance
           alb.ingress.kubernetes.io/healthcheck-path: /
-    hostName: spin-jenkins.cx-alpha0.com
+    hostName: spin-jenkins.el-mgmt-global.com
